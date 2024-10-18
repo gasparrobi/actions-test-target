@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: print
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.client_payload.sha }}
+      # - name: print
+      #   uses: actions/checkout@v4
+      #   with:
+      #     ref: ${{ github.event.client_payload.sha }}
 
       - name: Extract name and version
         run: |
